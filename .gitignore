@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Generated embeddings (~100MB); run scripts/cache_embeddings.py
+Data/Embeddings/
+
+# Optional large / regenerated artifacts
+*.pt
+*.ckpt
+
+# Logs
+*.log
+
+# Old nested clone metadata (re-init git at repo root for your fork)
+# .git/

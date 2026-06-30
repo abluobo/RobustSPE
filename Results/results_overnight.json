@@ -1,0 +1,82 @@
+{
+  "appceleratorstudio": {
+    "paper_baseline": 2.5,
+    "engineering": 2.4363366762797036,
+    "fewshot_k20": 2.2034149885177614
+  },
+  "aptanastudio": {
+    "paper_baseline": 4.49,
+    "engineering": 4.371129830678304,
+    "fewshot_k20": 4.089245986938477
+  },
+  "bamboo": {
+    "paper_baseline": 1.91,
+    "engineering": 1.9513756036758423,
+    "fewshot_k20": 1.2055888056755066
+  },
+  "clover": {
+    "paper_baseline": 3.6,
+    "engineering": 3.28124992052714,
+    "fewshot_k20": 3.102472496032715
+  },
+  "datamanagement": {
+    "paper_baseline": 7.41,
+    "engineering": 7.467538038889567,
+    "fewshot_k20": 9.572907304763794
+  },
+  "duracloud": {
+    "paper_baseline": 2.71,
+    "engineering": 2.2202201684316,
+    "fewshot_k20": 1.2763157844543458
+  },
+  "jirasoftware": {
+    "paper_baseline": 2.79,
+    "engineering": 2.7490530014038086,
+    "fewshot_k20": 2.3009036064147947
+  },
+  "mesos": {
+    "paper_baseline": 1.91,
+    "engineering": 1.7053571542104085,
+    "fewshot_k20": 1.5179518103599547
+  },
+  "moodle": {
+    "paper_baseline": 12.21,
+    "engineering": 12.650657335917154,
+    "fewshot_k20": 11.54319362640381
+  },
+  "mule": {
+    "paper_baseline": 2.69,
+    "engineering": 2.784027099609375,
+    "fewshot_k20": 2.530264663696289
+  },
+  "mulestudio": {
+    "paper_baseline": 3.38,
+    "engineering": 3.3943533897399902,
+    "fewshot_k20": 3.3757022619247437
+  },
+  "springxd": {
+    "paper_baseline": 2.11,
+    "engineering": 2.074021577835083,
+    "fewshot_k20": 2.0130632758140563
+  },
+  "talenddataquality": {
+    "paper_baseline": 3.54,
+    "engineering": 3.5788076718648276,
+    "fewshot_k20": 3.484717082977295
+  },
+  "talendesb": {
+    "paper_baseline": 1.88,
+    "engineering": 2.7926267782847085,
+    "fewshot_k20": 1.2035377383232118
+  },
+  "titanium": {
+    "paper_baseline": 3.32,
+    "engineering": 3.3675402800242105,
+    "fewshot_k20": 3.17104434967041
+  },
+  "usergrid": {
+    "paper_baseline": 1.56,
+    "engineering": 1.567081610361735,
+    "fewshot_k20": 1.0170995712280273
+  }
+}

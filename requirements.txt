@@ -1,0 +1,11 @@
+# PyTorch + sentence-transformers (our reproduction pipeline)
+torch>=2.0
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+scipy>=1.11
+sentence-transformers>=2.2
+
+# Optional: only needed for vendor/hil-se TensorFlow baselines
+# tensorflow>=2.12
+# fasttext

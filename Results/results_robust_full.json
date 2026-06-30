@@ -1,0 +1,82 @@
+{
+  "appceleratorstudio": {
+    "paper_baseline": 2.5,
+    "musig_k20": 2.203,
+    "robust_k20": 2.692756175994873
+  },
+  "aptanastudio": {
+    "paper_baseline": 4.49,
+    "musig_k20": 4.089,
+    "robust_k20": 4.394808435440064
+  },
+  "bamboo": {
+    "paper_baseline": 1.91,
+    "musig_k20": 1.206,
+    "robust_k20": 1.099999988079071
+  },
+  "clover": {
+    "paper_baseline": 3.6,
+    "musig_k20": 3.102,
+    "robust_k20": 3.11181321144104
+  },
+  "datamanagement": {
+    "paper_baseline": 7.41,
+    "musig_k20": 9.573,
+    "robust_k20": 7.339380264282227
+  },
+  "duracloud": {
+    "paper_baseline": 2.71,
+    "musig_k20": 1.276,
+    "robust_k20": 1.0936532616615295
+  },
+  "jirasoftware": {
+    "paper_baseline": 2.79,
+    "musig_k20": 2.301,
+    "robust_k20": 2.324397587776184
+  },
+  "mesos": {
+    "paper_baseline": 1.91,
+    "musig_k20": 1.518,
+    "robust_k20": 1.4118072390556335
+  },
+  "moodle": {
+    "paper_baseline": 12.21,
+    "musig_k20": 11.543,
+    "robust_k20": 12.066143131256103
+  },
+  "mule": {
+    "paper_baseline": 2.69,
+    "musig_k20": 2.53,
+    "robust_k20": 2.785040283203125
+  },
+  "mulestudio": {
+    "paper_baseline": 3.38,
+    "musig_k20": 3.376,
+    "robust_k20": 3.4040730476379393
+  },
+  "springxd": {
+    "paper_baseline": 2.11,
+    "musig_k20": 2.013,
+    "robust_k20": 1.9513120174407959
+  },
+  "talenddataquality": {
+    "paper_baseline": 3.54,
+    "musig_k20": 3.485,
+    "robust_k20": 3.7245408058166505
+  },
+  "talendesb": {
+    "paper_baseline": 1.88,
+    "musig_k20": 1.204,
+    "robust_k20": 0.9292452752590179
+  },
+  "titanium": {
+    "paper_baseline": 3.32,
+    "musig_k20": 3.171,
+    "robust_k20": 3.4057373285293577
+  },
+  "usergrid": {
+    "paper_baseline": 1.56,
+    "musig_k20": 1.017,
+    "robust_k20": 0.9190476179122925
+  }
+}

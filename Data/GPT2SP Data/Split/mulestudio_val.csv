@@ -1,0 +1,293 @@
+Issue,Storypoint
+"DB: Deprecate old Database/JDBC Element
+Old Database should be renamed to ""JDBC (deprecated)"". ",5
+"DB: Add support for transactions
+Add support for transactions",1
+"DB: Create palette and canvas icons for new database elements
+Create palette and canvas icons for new database elements",1
+"DB: Define palette location for new database elements
+Define palette location for new database elements",1
+"Framework: Implement a type/category filter language for describing which elements can exist inside a container
+We need to iterate over the existing category/types filtering capabilities that were implemented in the framework for batch (containers).   Currently containers can declare which category/types they accept or are accepted in, but only supporting one logical operation per sentence and with no sense of cardinality.  These needs are also covered in a lot of other components such as scopes, composite sources, poll, etc. This is currently achieved in a lot of custom ways (with a lot of custom attributes like acceptsOnlyOne, hasMultipleChildren, allowsOnlyInbound, etc) leading to absolute chaos.    We aim to build an expression language for building filters similar to regex language which allows to:  * use logical operations  * use nested sentences with parentheses  * declare cardinality  * handle types and categories",8
+"DataMapper: ""Generate Default"" should provide feedback when successful 
+When a user chooses to ""Generate Default"" in Datamapper, feedback should be provided when default generation has completed.      See mockups for guidance (notice that the mockups represent a few phases of improvement):  http://corp.wiki.mulesource.com/display/WP/Miscellaneous#Miscellaneous-DM%3AGenerateDefault",5
+"Enable collapsable elements when appropriate (i.e. All, Choice, Scopes)
+When having complex flows, MP's like All, Choice and Scopes, clutter the interface too much. Studio should give the option to collapse such items for readability.",21
+"Studio debugger should generate MEL query when click on element
+Studio debugger should auto-generate the MEL Query for the selected element in the ""Debugger View"".",13
+"Show Choice branch expression on-hover and allow in-line editing
+When working with choice routers, currently its very cumbersome to really know which branch condition does what and we end up going to the XML view every time. It would be nice if we could just hover on top of the branch and studio would show the condition that is being applied for that condition branch. Additionally, would be even better if after clicking on that condition, Studio would let me edit that expression.",13
+"Show preview of referenced flow when hover on flow-ref
+Sometimes (especially when maintaining an application) we need to track what is the application logic. However, when doing flow-refs it can be hard to track where is the referenced flow and then come back again to the calling flow. Thus, it would be nice if we could see a preview of the referenced flow when hovering on top of the flow-ref message processor.",21
+"Switching from Message Flow view TO Configuration XML view should focus on the corresponding XML element
+When working with complex configuration files, we usually need to go back and forth between the graphical and xml view. It would be much more efficient if when switching to the XML view, Studio would automatically focus the XML section related to the graphical active element.",34
+"Web Service Consumer is not generating right metadata
+The metadata that the web service consumer is generating does not represent the entire message of the operation. It Just propagate the first part of the message. ",2
+"Web Services consumer :: In some cases the connection to the WSDL takes too long and there isn't a Cancel option
+When attempting to connect to a WSDL and the connection takes too long, there is no way to cancel the operation and Studio does not respond.    steps:   Add a Web service consumer to the canvas and enter the following url in the WSDL field, or any url for a WSDL with a slow connection    http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL    ",3
+"Studio support for OAuth 2.0 Module inclusion in Mule
+The OAuth 2.0 module will be merged with Mule EE starting with the Dolomite version (3.5.0-M4).     As a user, I want Studio to support this configuration. OAuth 2.0 should appear as an option in the palette OOTB with 3.5.0-M4 and up, and if the user updates the OAuth 2.0 module through the update site, or adds/removes the module from the Mule application, the UI should be consistent with the functionality offered by the module.    [~rrinaudo], [~dandiep] FYI. This is the Studio side of EE-3738    ",3
+"Shortcut to switch between 'Message Flow' and 'Configuration XML' views
+Switching between both views is very common and a shortcut would really improve that experience.",8
+"Unify connectors and endpoints across Studio (phase one)
+Details here: https://docs.google.com/a/mulesoft.com/spreadsheet/ccc?key=0Ag_HMY-0TfqodGoxWHBfVFNkZ3kxS0FBSEtUQWswMkE&usp=drive_web    ",8
+"Rename SOAP to CXF in palette
+Rename SOAP to CXF in palette",1
+"Support DataMapping with no/null payload
+As a user, I want to be able to do DataMapping, even if I have a null payload so that I can map my input arguments to my output for creating web service queries.    e.g. someone is polling a web service and using the watermark to create the query.",8
+"WebServices: apply XML changes to our current web service consumer 
+We need to apply the ESB XML changes to our current editor.     Pending: add spec. ",13
+"DB: Polish database editors
+Add support for syntax highlight. Make the editor look similar to the one in SFDC Query. Add autocompletion for MEL expressions. Make it look better in general.",5
+"DB: Add support for connection pooling elements
+Add support for connection pooling",3
+"Metadata Outline Should Support Describe XML Model
+In order to make XMLMetaDataModel being display in the Metadata Outline. The object in commons needs to be self descriptive. In order to do this the logic around schema introspection needs to be implemented. ",5
+"Support type grouping for Connectors with DataSense
+Support Type grouping for Connectors and DataSense. Integrate with Dev-kit.",8
+"DB: Add palette search keywords to New Database connector
+Add palette search keywords to New Database connector. Make it appear under suggestions when searching for sql, database, mysql, select, insert, etc.",1
+"DataMapper  cannot process large XSD files
+When using the XSD file attached in this issue and selecting *Root Element*: TXLife:  * Creating the mapping takes very long * Studio runs out of memory  {code} java.lang.OutOfMemoryError: Java heap space   sun.text.UCompactIntArray.initPlane(UCompactIntArray.java:142)   sun.text.UCompactIntArray.setElementAt(UCompactIntArray.java:55)   java.text.RBTableBuilder.addOrder(RBTableBuilder.java:324)   java.text.RBTableBuilder.build(RBTableBuilder.java:136)   java.text.RBCollationTables.<init>(RBCollationTables.java:65)   java.text.RuleBasedCollator.<init>(RuleBasedCollator.java:276)   java.text.Collator.getInstance(Collator.java:251)   java.text.Collator.getInstance(Collator.java:207)   com.cloveretl.commons.bean.ListPropertySupport.<init>(ListPropertySupport.java:31)   com.cloveretl.commons.bean.ListPropertySupport.<init>(ListPropertySupport.java:38)   com.cloveretl.gui.model.GraphMetadata$A.<init>(GraphMetadata.java:731)   com.cloveretl.gui.model.GraphMetadata$A.<init>(GraphMetadata.java:731)   com.cloveretl.gui.model.GraphMetadata.<init>(GraphMetadata.java:105)   com.cloveretl.gui.model.builder.ETLGraphBuilder.a(ETLGraphBuilder.java:302)   com.cloveretl.gui.model.builder.ETLGraphBuilder.A(ETLGraphBuilder.java:180)   com.cloveretl.gui.model.builder.ETLGraphBuilder.build(ETLGraphBuilder.java:155)   com.cloveretl.gui.model.builder.ETLGraphBuilder.build(ETLGraphBuilder.java:147)   com.cloveretl.gui.model.builder.ETLGraphBuilder.buildGraphModel(ETLGraphBuilder.java:142)   com.mulesoft.mule.datamapper.ui.editor.DataMapperEditor$OpenGraphJob.run(DataMapperEditor.java:453)   org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) {code}",8
+"Studio should have smarter validation for property-placeholders
+In spring to allow multiple property placeholders, you need to use the attribute *ignore-unresolvable*.    If not you get an error that the placeholder variables cannot be found:    {code}  Test connection failed: Invalid bean definition with name 'MySQL_properties' defined in null: Could not resolve placeholder 'mysql.password' in string value ""${mysql.password}"" (org.mule.api.lifecycle.InitialisationException)  org.mule.common.MuleArtifactFactoryException: Error initializing    org.mule.config.spring.SpringXmlConfigurationMuleArtifactFactory.doGetArtifact(SpringXmlConfigurationMuleArtifactFactory.java:203)  {code}    This is because Spring won't look for another placeholder definition unless the attribute ignore-unresolvable is set.    A proper configuration will be that all property-placeholders look like:    {code}  <context:property-placeholder location=""oracle.properties"" ignore-unresolvable=""true""/>  {code}    Studio should add a Warning to a config file indicating that there are multiple propery placeholders and that ignore-unresolvable is not set to true.",8
+"Support MEL auto-complete in choice
+Choice should support autocompletion of expressions.",5
+"Support MEL auto-completion with DataSense query editor
+When building conditions for a DataSense query, we should support auto-completion.   * Filter values * DSQL/native query language text box  ",5
+"Classloader leaks prevention in DataSense
+When using DataSense, leak prevention needs to happen around JDBC, Threads, Timers, MBeans, etc. to ensure that the DataSense classloader is garbage collected.",13
+"Add friendly name and description to DataMapper
+A friendly name and a long description are getting added into the metadata model for fields. DataMapper and the payload explorer should use these to represent the payload.    Needs mockup.",34
+"Move New DB connector back to CE Studio
+Move New DB connector back to CE Studio",2
+"Changes in Mule Properties View can't be saved until the view loses focus
+When editing fields in the Mule Properties View,  in order to save the changes I've made,  I need to focus other view for Studio to allow me to save the file.    The ideal behaviour would be that it allowed me to save changes immediately after I change a field (without having to lose focus).",21
+"New Database: Move inner db operation child elements from xxx-sql to xxx-query and template-sql to template-query-ref
+Change inner db operation child elements from xxx-sql to xxx-query and template-sql to template-query-ref in accordance with the new xsd changes.",2
+" Flow Ref: Display name should display name of referenced flow.
+When a user selects a flow to reference in a flow ref, the display name should automatically update with the name of the selected flow.    ",5
+"Connection explorer: removing a configuration does not update the config reference drop down
+When removing a configuration from the Connection explorer, the ""config reference"" drop down is not updated",8
+"SubstituableNames on the ESB schema allow property-placeholders but not expressions
+Need to review all attributes in Mule XSD files that are defined as *type=""substitutableName""* and mark them in Studio as fields that accept:    * String literal value  * Property Place-holder: ${prop.name}  * *DO NOT* accept expressions: #[expr]",21
+"Connectors: Improve connector version selection
+Users often mention that they get annoyed by the ""Use newest version of connector?"" popup (although they never click the ""remember my selection"" box)"".    Please see mockup for details of the improvement: http://corp.wiki.mulesource.com/display/WP/Connectors#Connectors-ChangeConnectorVersion",13
+"Rename ""Documentation"" Tab to ""Notes""
+Please change the name of the ""Documentation"" tab name to ""Notes"".   This change should be coupled with the connector simplification to minimize the need for new screenshots in Documentation.   See attached screenshot for location clarification.  * Change Documentation tab to notes * Remove documentation group label right above Description * Remove Description label * Change Flow Use Case to Notes ",1
+"New Database: Problem in the xml merge when changing the operation in the editor
+When using the new db connector if you have a configured MP, change the operation in the operator and go to the xml, the xml is not well-formed, resulting in things like:     <db:select>                 <- The new operation in the editor  ...  </db:stored-procedure>      <- The old operation in the editor",5
+"Don't retrieve metadata if connector isn't configured
+We should not try to retrieve the metadata if the required fields on the connector are not filled out.",5
+"editor view should automatically gain focus when MP is selected
+When I select a message processor in the canvas, the editor is opened in the views panel but it doesn't get focus automatically. That means that it takes me two clicks to see the config of any processor which is not a good experience when developing, and also makes it harder to read a flow since I have to be constantly moving the mouse from up to bottom.",34
+"Properties/variables don't stay expanded when navigating between message processors
+As a user, I want my properties and flow variables to stay expanded or collapsed when moving from block to block in Studio.",8
+"Preference pane cleanup
+* Move web service cache settings to DataSense preferences. Should be under the heading ""Web Service Consumer""  * Authentication tab goes away, see STUDIO-7199 * Remove the API Manager 1.0 tab  * Cloud Connectors should be called Connectors (including the text on the preference page) * Maven Settings -> Maven * Move runtimes from main page into runtimes panel (let's discuss to see if there's an easy way to make it link to the update site?) ",3
+"DataSense not available in watermark
+See attached screenshot. I have a poll element with a cloud connector that returns a pojo. When I'm writing the watermark expression, DataSesnse should be able to know exactly what the payload is and offer me auto completion capabilities.  However, it does not",3
+"Move add message property to top of properties
+The ordering in the message properties transformer isn't according to the most used operations.     It should be add first, then delete.    This is a usability issue in the pre-sales workshop.",2
+"Prototype new DataSense experience
+Acceptance criteria:  * DataMapper retrieval should not block the user (background retrieval)  * Refresh button which refreshes object list  * Refresh button which refreshes message processor metadata  * Optional share metadata between processors  * Should create a list of issues which need to resolve to complete this feature",8
+"Unify connectors and endpoints part 2
+Need to finish implementation of https://docs.google.com/a/mulesoft.com/spreadsheet/ccc?key=0Ag_HMY-0TfqodGoxWHBfVFNkZ3kxS0FBSEtUQWswMkE&usp=drive_web",8
+"Propagate metadata for record vars
+Need to propogate record variable information across batch steps.    ",5
+"Add aggregation strategies to global elements
+Support creating an aggregation strategy for the global elements.  http://corp.wiki.mulesource.com/display/WP/Miscellaneous#Miscellaneous-ScatterGather  * Be available in the global elements create tab * Aggregation strategies are show in list/chooser in scatter-gather * Can create/edit strategies directly from scatter-gather ",8
+"Debugger support for record variables
+Need to support record variables inside the debugger.",3
+"Watermark should set flow's processing strategy
+Watermark functionality requires the owning flow to have a synchronous processing strategy, which is fine.    However, synchronous is not (and should not be) the flow's default. That means that when I put a watermark in a flow and I start the application, I get a deployment exception saying that the flow should be synchronous. This is confusing to the user and requires him to read the logs, find the message, change the flow an try again.    It would be great if upon enablement of watermark, studio could automatically set the flow's processing strategy to synchronous.  ",13
+"Improve Studio Analytics (KissMetrics) reports to include Studio version and OS
+Improve Studio Analytics (KissMetrics) reports to include Studio version and OS.    Report url should include: ""?version="" + studioversion + ""&fullVersion="" +  fullStudioVersion +""&os="" + runningOS + ""&javaVersion="" + javaVersion",2
+"Make DataSense combo-boxes searchable
+When I'm looking to find an object in Salesforce, I expect that the combo box should be searchable when I start typing so I can quickly find what I'm looking for.",5
+"There is no general tab to clear application data when running junits
+There is no general tab to clear application data when running junits.    This complicates the run of, any kind of tests in particular any functional test case that runs an application that relies on OS.    Please check attached documents",5
+"Improve UX of payload/variable/property selection in data mapper
+We need to improve the UX as we all agree it's fairly confusing. TBD how exactly to do this.",34
+"Drag item from metadat explorer and create expression
+As a user, I want to be able to drag an item from the DataSense explorer into a text box and have an expression generated for me.  Acceptance criteria: * Must work with payload, variables, and properties * Must use ""."" syntax  * Must properly escape properties, i.e. foo.'bar baz' * Must support Maps and POJOs * Must handle things correctly if you drag in an existing expression vs an empty text box * Must support XML - TODO: what's the valid way to do this?",5
+"Add preference for deprecated message processors
+Users should be able to configure whether or not they want to show deprecated message processors.    Acceptance Criteria:  * If a message processor was deprecated in 3.5, it must be hidden/shown according to the preference in projects 3.5 and above  * If a message processor was deprecated in 3.5, it must still be shown in 3.4  * Do the same behavior for XML autocompletion  * For new installations, this should be checked by default",5
+"Push Cascade fixes to update site
+* need to document changes and add them to release notes ",3
+"Move endpoint to front of flow
+Users have attempted to drag an endpoint from the end to the start of a flow.  Studio should allow this action, and throw a warning if settings will be overwritten.    Mockups here: http://corp.wiki.mulesource.com/display/WP/General+Improvements#GeneralImprovements-Moveendpointtofrontofflow",8
+"Navigation: Focus should jump to newly added message processors
+When a user adds a new message processor to the flow, the focus should jump to the new MP and information should appear in the Mule Properties View.",13
+"Allow users to highlight and copy disabled text
+Users have attempted to highlight and copy text in disabled fields, which is currently impossible.    A recent example is the MySQL Database Config ref.",21
+"Datasense deadlok when configuring global element first
+The problem is that the whole DataSense story is though for users that start adding an endpoint or operation to the canvas and then configuring the global config element. When creating the connector configuration first, users will end up in a deadlock.    Steps to reproduce:    1) Start a new project/configuration file  2) Go to Global Element Tab  3) Create a new Salesforce Configuration  4) Configure proper connection parameters  5) Hit ""Test Connection"" or ""OK""  6) As Salesforce Library is still not added to the project, Datasense cannot run because required SFDC jars are not part of the Classpath yet    The only way to move forward is:    1) Disable datasense support  2) Hit OK (after ok is done, the SFDC Library will be added to the project)  3) Open the Global Element editor again  4) Enable DataSense, execute Test Connection and click OK to retrieve DS types    ",3
+"WSC :: Real world web services and schemas :: Testing
+Studio QA - we have some great real world web services and schemas here. Can we get these into the QA plan and test them? Keep in mind that they're confidential.     DanD.",3
+"Testing :: FHIR schemas brought into our QA
+FHIR schemas brought into our QA: http://www.hl7.org/implement/standards/fhir/downloads.html",3
+"Update DM MEL functions to be null safe
+Need to update the DM MEL functions so that if the receive null, they also return null.",5
+"On metadata retrieval failure, give users options
+Options should be:    1) Don't retrieve metadata & disable  2) Edit connector configuration  3) Retry   ",3
+"Share metadata types across message processors
+We should store metadata so we can reuse it across message processors whenever possible so the user doesn't constantly get bombarded with popups.",5
+"DataSense explorer should support record variables
+Need to add support for showing record vars in the explorer. Record vars should be shown all the time.",3
+"Implement HA flag for performant vs reliable mode
+Implement Studio work for EE-3877.  See spec in http://corp.wiki.mulesource.com/display/WP/Mule+Cluster+Performance+Profile",2
+"Upgrade SAP Connector for Mule 3.4.x and 3.3.x to version 2.1.2
+Upgrade SAP connector for Mule 3.3 and 3.4 to be the latest released one.",2
+"[Usability] [DataSense] Cancelling a Retrive DataSense types operation triggers new retrievals
+Cancelling a Retrive DataSense types operation pressing cancel on the dialog triggers new retrievals most of the time.",5
+"[Palette] Palette's toolbar filter erases the text when hitting enter
+When filtering the elements in the palette by adding a filter (lets say ""salesf"") the components are filtered properly.  But if the enter keyword is hit, the complete text disappears, erasing the complete filter.    As hitting enter doesn't do anything (as the search was already done while entering the word ""salesf""), it would be nice remove the action that erases the input.",8
+"If user searches for All in palette, suggest Scatter-Gather
+With the deprecation/disappearance of the All component, we should suggest Scatter Gather in the palette when a user searches for All.",3
+"Mel autocompletion should avoid adding quotes when identifiers have valid characters 
+add variables with names:  ""foo"", ""foo1"",""foo 1"" and ""foo+a""    when autocompletion from ""flowVars.""    should autocomplete:    flowVars.foo  flowVars.foo1  flowVars.'foo 1'  flowVars.'foo+a'",34
+"Radio Booleans: when changing the radio button, the one previously selected should be disabled and greyed 
+Check attached screenshot.     The component and text under the Update Expression, should be greyed.       ",3
+"Generating mappings without isnull for 3.5 and above
+Now that DM functions are null safe, we should generate mappings without isnull since it is much more performant. Previous runtimes should still behave the same way as before.",5
+"Spike: Retrieve DataSense as a background process
+Per original mockups, we should update the UI asynchronously as we load metadata in the background.    The plan is to divide it into two phases: Retrieve types in the background, then retrieve metadata structures in the background.",13
+"DataSense: Metadata retrieval is executed twice when using a salesforce query operation 
+Steps to reproduce:   1.- Configure the global Salesforce connector.   2.- In a Flow add a sfdc Message Processor and set the query operation   3.- Open the query builder and select a type   4.- Select some attributes   5.- Clic ok in the query builder and then save in the Salesforce config     Issue: the metadata retrieval is called twice.   ",3
+"[Query Builder] UI misbehaving after DataSense type structure retrieval
+The Querybuilder UI misbehaves after a DataSense type structure retrieval operation: trying to click on any element is 'delayed' and very confusing for the user.",5
+"Global Security Module configurations shouldn't be listed under 'Connector Configuration' Category
+All the Security Message Processors that have Global elements, have their global elements listed under Connector Configuration, they should have their own category named Security. ",5
+"When replacing production connector with test connector I get a 'name must not be unique' error in studio
+When replacing production connector with test connector I get a 'name must be unique' error in studio.    This connector name overloading technique is used in 'Mule in Action' (2nd edition) it is harmless since the two versions of the connector are not actually used at the same time. The technique is also very useful. However MuleStudio produces errors if it is used.",21
+"DataSense doesn't work with mule specific system properties like app.home
+If the component to use has references to *mule.home* or *app.home* then DataSense fails with the error in the screenshot.    *Element to Test*    {code}  <sap:outbound-endpoint exchange-pattern=""request-response""  			type=""function"" functionName=""BAPI_CUSTOMER_CREATEFROMDATA1""  			responseTimeout=""10000"" definitionFile=""${app.home}/sap/customer-createfromdata1.xml""  			doc:name=""Create customer in SAP (Standard BAPI)""   			evaluateFunctionResponse=""true"" connector-ref=""SapConnector"" outputXml=""true"" xmlVersion=""2""/>  {code}",5
+"Global elements :: only available in connector configuration after clicking in canvas
+When creating a global element in the connections explorer, it is only available after clicking in canvas    Steps to follow:    Create a flow with an http and a Salesforce     Create a Salesforce global element   using the Connections Explorer    Save changes    Attempt to select the global configuration previously set by clicking in the Connector configuration list    ISSUE:  the salesforce global configuration does not appear in the list until clicking in the canvas    See attached screenshot      ",8
+"Poll gives a warning about the payload in DataSense Explorer
+See attached screenshot.     I think that all message sources should have Payload: None for the input. ",5
+"DataSense for watermark not available inside MPs inside a <poll>
+1. Create a <poll> with a watermark value  2. add a <logger> inside the <poll>  3. Type ""#[flowVars."" - there will not be a watermark value.",5
+"Release MUnit Studio plugin beta
+Should be based on 3.5-M2.",3
+"Define plan for removing mflows
+Output should be set of JIRAs to plan with for next sprint. ",13
+"When installing the 3.3.3 ESB Runtime all your current project runtimes are changed to 3.3.3
+Steps to reproduce:   1.- In your current workspace with several projects go to the runtimes update site  2.- Select the ESB 3.3.3 Runtime and install it   3.- Create a new project with that runtime.       Issue: after rebooting Studio, all the runtimes versions of your project are changed to 3.3.3",15
+"ErrorMarkers inside a composite source doesn't show in the correct Message Processor 
+Steps to reproduce:  1.- Add a composite source   2.- Add 2 Ajax and configure the channel in the second one   3.- Save    Issue: the second Ajax MP has the error marker from the first one.   Check screenshot ",5
+"[.mflow removal] Remove .mflow files from project editor, generate .mflow model in memory.
+[.mflow removal] Remove .mflow files from project editor, generate .mflow model in memory. Need to define project navigator experience.",13
+"[.mflow removal] Migrate flows, subflows and exception strategies to the Containers framework
+[.mflow removal] Migrate flows, subflows and exception strategies to the Containers framework (the one currently used by batch)",13
+"[.mflow removal] Replace old mflow memory model and update the XML <-> Graphical merge algorithm 
+[.mflow removal] Replace old mflow memory model and update the XML <-> Graphical merge algorithm. Need to define how this will be accomplished.",13
+"When the mule project server referenced in mule-project.xml is not present, default to the most recent one.
+When the mule project server referenced in mule-project.xml is not present, default to the most recent one. Now, if you install a new runtime (an older one for example) and if the server referenced in the mule-project.xml is not installed, projects will default to that old server. The whole problem is a bit bigger and more complex to fix, but this fix will help greatly minimise it.",2
+"property element is marked as invalid when used as a child element of imap or pop3 inbound endpoints
+*property* element is used to pass extra settings to imap and pop3 inbound endpoints, though Studio is marking those elements as invalid whenever it found them as child elements of that kind of endpoints.    The messages shown in each case are:    {code}  Element: Property is not allowed to be child of element IMAP    Element: Property is not allowed to be child of element POP3  {code}",5
+"Incorrect validation: reference to Unknown global element
+Copy and paste the code enclosed in this Jira  Save changes  In the error panel you can see the following errors:    Reference to unknown global element: SFDS_PROD  Reference to unknown global element: SFDS  Reference to unknown global element: OSAT    Edit XML and replace the following:    dataSource-ref with mms-dataSource-ref      Save the changes  Undo changes  Save the changes    ISSUE: the validation error is not displayed anymore  ",8
+"Global references: Connection Explorer is not refreshing the changes of the names
+Steps to reproduce:  1.- Create 2 Mule Configuration Files.   2.- In one, create a global salesforce connector  3.- Go to the other one and add an HTTP Connector and a Salesforce   4.- From the salesforce, open the global Salesforce connector and update the Global Name   5.- Save all     Issue: the name is not refreshed in the connection explorer. You have one name in the Connector ref and another one in the connection explorer for the same element. ",5
+"DataMapper: Add support for JSON Schema
+Add support for JSON Schema in DataMapper  Acceptance criteria: * User can select JSON schema as an option for input or output * If JSON schema isn't parseable or the version isn't supported, we should display a clear error message as to the reason why. * Test suite which exercises all data types and structure capabilities of JSON schema  NIce to have - support for filtering elements. ",8
+"Mule Studio project specific context menu options displayed on Java and other non-Studio projects context menus
+This context menus need to appear ONLY on MuleStudio projects:    * DataSense.  * Mule Management Console.  * Maven Studio Support.  * CloudHub.  * Apikit.",15
+"Driver: Display message encouraging user to add driver when it is missing
+When a user is missing a driver, show ""Please add required driver before proceeding"" to the dialog to encourage the user to add the driver.    See attached screen for details.",2
+"Driver: Add ""Quick Fix"" functionality
+Please implement ""Quick Fix"" in the problems tab for all driver related errors.  ",8
+"Spike on shared resources, launcher, and multi-project support
+Need to do a spike on the requirements and feasability of multi-project and shared resources support via a new launcher.    Acceptance Criteria:  * Create spec & mockups for creating a domain and projects which are part of a domain. Should how we will limit domain projects from creating flows.  * Create mockups for desired launcher experience which encapsulates:  ** single project apps and domain apps  ** deploying to a Mule instance in Studio  * Get previous launcher code working again  * Prototype refreshed UX of launcher  * Define how old projects will be run  * Define what import/export experience requirements are  * Define set of tasks for next sprint  * Create draft QA plan for review  ",13
+"Spike on RAML consumer
+Need to spike on RAML consumer.    Acceptance criteria  * Mockups around configuring resources from RAML  * Mockups around configuring resources without RAML  * Prototype including ability to  ** GET & POST to resources  ** Create a ""Connector configuration""  * Create next set of tasks  * Define experience to configure OAuth for RAML consumer and DevKit  * Create draft of QA plan  ",26
+"Add support for JSON metadata model
+Need to add in support for JSON schema to mule commons.  Acceptance criteria: * JSON structure should appear in metadata viewer * DataMapper should recognize inputs/outputs from other connectors that support json schema.  * Create a mock connector for json schema for testing & demos ",13
+"[New Launcher] Define outcomes for scenarios when deploying and modifying domains
+Write scenarios for domain+app deployment    - what is the behavior of domains when modified and deployed?  - what is the behavior when an app associated with a domain is modified and deployed?    Acceptance Criteria:  * Written scenarios  * Rough mockups",3
+"Implement flows using containers
+Implement flows using containers",5
+"Remove all references to the non-container Flow elements
+This involves removing all references to the existing Flow elements (NodeDefinition/MessageFlowEntity/EditPart/Figure)",1
+"[New Launcher] Add applications status feedback
+As a studio user I need to know the status of each developed application in the running runtime.     Acceptance Criteria:  * When application is running, it should be green  * When application is not running, it should be grey  * When application fails to deploy, it should be red  * When it is deploying, it should be yellow",8
+"[New Launcher] Implement start, stop and redeploy application actions
+As a studio user I need be able to start, stop and redeploy a developed application in the running runtime  Acceptance Criteria: * Stop/start/redeploy acctions should give feedback while actions occurring (experience TBD) ",5
+"Autocomplete with ENTER in a dialog, closes the dialog 
+To reproduce the bug:    - Add a Custom Business Events to a flow  - Double click in the new added component to edit the properties  - Add a new property in settings  - A dialog to complete the name/value of the property appears  - Use the autocomplete (^Space), select a value from the list and hit ENTER    Expected behavior:  - The selected value from the automcomplete must be added to the text.    Current behavior:  - The ENTER keystroke it's captured by the dialog, so it closes    This video captures the issue:  https://docs.google.com/a/mulesoft.com/file/d/0B_zvjpQNtf7IQkIwb21uWUFWM3c/edit  ",34
+"Add loading widget when opening Library
+When opening library, the user has no feedback that the page is loading.      ",1
+"Mule Config Flow Editor marks file as modified just by selecting an item
+If I open flow.xml and just select an item within it then studio marks this file as modified even I made there no changes at all. This is pretty annoying. Please see the attached video.",8
+"[New Launcher] Display server information in header
+As a user, I want to see the name of the server that I'm launching, so I have context into what version it is.    Acceptance criteria:  * Server name and version should be visible in header",2
+"[New Launcher] Define how new launcher co-exists with old runtimes & launcher
+We need to define how new launcher co-exists with old runtimes & launcher.  Acceptance criteria: * Written scenarios  * Define how we will on-ramp users onto the new experience  * Define how users of run configurations will achieve similar capabilities in new experience (e.g. run with HA, system properties, etc) ",3
+"HTTP client request builder
+As a user, I want to configure the HTTP message processors to use the request builder    Acceptance criteria:  * Can configure individual headers, query params and form params  * Can configure the <query-params>, <header-params> and <form-params/>  ",8
+"HTTP client get/post/put/delete/execute message processors
+As a user, I want to configure an outbound HTTP connector to do get, post, put, delete, and execute operations  Acceptance criteria: * Two way editing works for the following items in the spec ** Get, post, put, delete and execute operations ** resource ** host and port ** follow redirects ** success and error status codes * If I select ""execute"" I can input my own HTTP method ",3
+"HTTP client global configuration
+As a user, I want to configure my global configuration, including  * URL, port, and base path * RAML file  Acceptance criteria: * two way editing works for the abovce areas as defined in the spec",3
+"HTTP client RAML based configuration
+As a user, I want to use my RAML to assist in configuring the HTTP connector.     Acceptance criteria:  * List of resources in the RAML should be visible in the resource field  * List of methods which are applicable to that resource should be visible  * Should be able to write an expression to override the resource or method  * Query, form and header params should be auto-populated from the RAML    ",3
+"HTTP client DataSense propagation for JSON schema
+As a user, I want my JSON schema to propagate over DataSense when I select an oepration.",5
+"HTTP client DataSense propagation for XML schema
+As a user, I want my RAML metadata to propagate XML schema information over DataSense. ",3
+"[New Launcher] Improve application lifecycle support with new launcher and new runtime view
+New projects should appear on the view, deleted projects should be undeployed and removed, etc.    Support the whole lifecycle of a Studio project within the view.",5
+"[New Launcher] Add preference or run-configuration option for ESB agent port.
+Add preference or run-configuration option for ESB agent port.",3
+"[New Launcher] Hook ESB JVM to the running Studio process
+Hook ESB JVM to the running Studio process, so that when Studio is closed, the ESB JVM process is automatically killed. This is really needed to avoid having problems with used ports due to hanged processes.  ",5
+"HTTP client add support for oauth configuration
+As a mule user we need a way to configure and use oauth with my http configuration",5
+"HTTP client add support for security configuration
+Adding support to configure security in the http connector global configuration including SSL configuration and basic authentication",5
+"[New Launcher] Definition and spike on on Server Run Configuration and experience
+We need to define the whole experience of launching applications. Right now when launching the second application it will use the same process of the one that's running.    Evaluate a solution like:  There is a Run Configuration for each server. In this configuration you can specify all the applications to add to the server. If launching an application outside this list, notify the user and add the application to that server or stop the current server and start over with only this application deployed.  ",5
+"Add metadata propagation for JSon by example
+As a user using JSon by example in DataMapper I will like that this metadata gets propagated in the flow.",8
+"mule-deploy.properties should not be modified if the list of config files does not change
+Mule-deploy.properties should not be modified if the list of config files does not change. Today, the property with the list of files to deploy is modified each time the server is run or the project exported.     In addition, if there is a problem updating this file (it is read-only for example), it should be informed so as the user can decide what to do. This was requested by Intuit.",5
+"Examples in Library
+Please adjust the ""example"" link on the welcome screen to point to examples in the library. (Library should open with a filter for examples)    See attached screenshot for wording and location of link.    Acceptance Criteria:  # Remove all the Examples from the servers in Studio   # Change the Create Example links to open the library and create the example from there.   # When Updating Studio the New Example mechanism should be replaced  # When creating an example, Studio should set the Server runtime version to the one that comes from the library.     From library:   # Library should filter examples by server with the information sent by Studio to the library   # The user should not be prompt for his information each time that he wants to use an example  ",13
+"New Menu: Move Java Project, Project, and Example to ""Other""
+Please remove the following from the New menu:   -Java Project  -Project...  -Example...    They should be available in the the ""Other..."" window.    Please see attached screenshot for details.",8
+"Datasense dropdown should allow a connector to only show the displayName of the generated keys
+When building a connector with DataSense, the dropdown in Studio concatenates the displayName with the ID (between parenthesis).    This is handy if for some scenarios, the same displayName is repeated but not the ID (salesforce-connector is one case).  But for other scenarios, the ID is probably not necessary.    It would be nice to have a way to tell Studio, from DevKit, to only show the displayName for the current connector",3
+"[HTTP Connector] <listener> and <listener-config> elements
+Need to support listener and listener-config elements as defined in the spec.    Acceptance Criteria:   # UI should follow the mockups   # New Message Processor in the palette and in the Global Element   # This  MP is a Message Source   # DataSense support.    # Autocompletion in the XML Support   # Validation with the xsd   ",21
+"Improve Canvas watermark to give better first instructions to the User
+We need to improve the Watermark in the canvas to let the user know     * Where the message processors are,   * That they can be drag and drop in the canvas   * That the properties to configure them will be displayed   * Where your project files are     We would need a mockup for this. ",5
+"Add support for installing library connectors
+Studio should open the plugin installation functionality when the user installs a connector listed there.  Acceptance Criteria:  The user should be able to search for a CC in the library (this should be present in the Library) and open the installation dialog from there and successfully install the CC.   This must be tested in Windows, Mac and Linux.   This should be tested in Gasher (future Update Site) and Himalaya. ",13
+"[New Launcher] Allow selection of more than one application in a Mule Run Configuration
+Run configuration",5
+"[New Launcher] Allow selection of Mule Domains in a Mule Run Configuration.
+Run configuration    -When selecting a Mule Domain, all its dependent applications should be selected.",5
+"[New Launcher] Allow users to select a Mule Server in each Mule Run Configuration
+Run configurations",3
+"[New Launcher] Migrate current run configurations to new ones
+Run configurations",5
+"[New Launcher] Create Mule Domain project
+- New Mule Domain action in all places where it should appear  - Forbid creation of more than one config file.  - Forbid renaming or deleting the mule-domain-config.xml file.    Acceptance Criteria:  # You can create a Domain project   # The Domain XML File should be created by default  # You should be able to edit the Domain file with an xml editor   # You should be able to add / remove libraries to the project (jar files)  ",13
+"[New Launcher] Associate a Mule Project to its parent Mule Domain
+As an Integration Developer you should be able to add a Mule Project to a Mule Domain Project so that when running the Domain project all the Mule projects associated with it are run.       Acceptance Criteria:   # From the mule-project.xml you should be able to specify that a project belongs to a Domain.   # The Domain project has no information about which projects belongs to it.   # There should be validations if the Domain project is missing or not present.   # There is no runtime validation between the Domain runtime and the project runtime, for instance.   # When running the Domain Project, the projects within the Domain are run.   # The Runtime version from the Domain project is the one that has precedence     NOTE: Today this only will work in EE.   ",8
+"[New Launcher] Mule Domain projects management : delete - update - change domain parent.
+Domain * If domain is renamed, existing projects should reference the renamed domain * If domain is deleted, existing projects should display an error  ",8
+"[New Launcher] Package Mule Domain projects
+Package the Domain project as it is defined in our documentation:   http://www.mulesoft.org/documentation/display/current/Shared+Resources     Acceptance Criteria:   # This is a sub-task for import / export functionality   ",8
+"[New Launcher] Export/Import a Mule Project with reference to a Mule Domain 
+import/export  Acceptance Criteria:  # When exporting an application that reference to a domain, the Domain should be exported only with that application.  # When importing this application, the Domain should be imported and the application and the reference should be preserved  # If the Domain already exists in your workspace, and you import this kind of project, user should be prompt on what to do or not allowed to do it.  ",3
+"[New Launcher] Allow to reference elements defined in a Mule Domain from other Mule projects
+this includes, validation and showing those elements in combos, etc.   Acceptance Criteria:  # Editors should be able to refer elements defined in the Domain.  # When referencing this elements, there should not be errors in the XML  # DataSense is handled in other Jira   Note: Test with beans, unknown elements, test what happens when doing ""go to reference"". ",8
+"[New Launcher] Edit Mule Domain project mule-project.xml file
+xml  Acceptance Criteria:  # You should be able to edit the Project Name and change the runtime from the mule-project.xml in the Domain project ",3
+"[New Launcher] Datasense support in Mule Domain projects
+should use domain credentials if they are used in a datasense call. there is a problem with the caches.   Acceptance Criteria:  # User should be able to do Test Connection, bring Metadata, use the Query Builder using Connectors defined in the Domain.  # The message processor should propagate the Metadata.   Note: test adding JDBC Drivers to the domain project and use the Connector from the Mule Project. ",8
+"[New Launcher] Classpath management in domain projects
+domain  Acceptance Criteria:  # If the Drivers are hosted in the Domain project they should be accesible from the child projects.  # This should support property files  # Add Jar files to the domain projects, and use classes from the Jar file in the Child project # Use classes from the Domain in a Unit test in the Child project  # Project should depend in Eclipse from the Domain so that the project shares the classpath   To test:  # Add drivers in both Domain and Child project  # Test connection using drivers hosted in the Domain  # Test with 3.5.0 and 3.6  # Use several projects depending on the same Domain   Lot and lot and lot of testing :(",21
